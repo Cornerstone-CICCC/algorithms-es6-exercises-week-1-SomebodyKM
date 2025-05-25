@@ -4,3 +4,10 @@ Write a named function expression that stores the function in a variable called 
 cry();
 Returns: boohoo!
 */
+
+
+const cry = function sound() {
+    console.log("boohoo!")
+}
+
+cry()

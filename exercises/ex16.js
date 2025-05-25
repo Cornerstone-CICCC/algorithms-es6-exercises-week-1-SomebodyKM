@@ -29,9 +29,22 @@ This will be the most complicated program you've written yet, so take some time 
 */
 
 function makeLine(length) {
-    var line = "";
-    for (var j = 1; j <= length; j++) {
-      line += "* "
-    }
-    return line + "\n";
+  let line = "";
+  for (let j = 1; j <= length; j++) {
+    line += "* "
+  }
+  return line + "\n";
 }
+
+function buildTriangle(row) {
+  let line = "";
+
+  for (let i = 0; i < row; i++) {
+
+    line += makeLine(i + 1)
+  }
+  return line
+}
+
+console.log(buildTriangle(10))
+
